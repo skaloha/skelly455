@@ -8,14 +8,10 @@
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-     <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 
 <!-- /END BOOTSTRAP 5 CDN -->
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/stylesheets/table-sortable.css">
 <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
   <title>Alvin Ailey American Dance Company - Case Study</title>
 
@@ -64,93 +60,136 @@
       <div style="width: 70%; vertical-align: top; min-width: 500px; padding: 30px; margin: auto;">
         <h1 style="text-align: center;">Today's Class Schedule</h1>
 
-        <table class="table-hover" width="100%">
+
+            
+        <table width="100%">
           <tr>
             <td style="border-radius: 10px; padding: 20px; background-color: #d2d2d2;">
-              
-              <!-- START NESTED TABLE -->
-
-              <table style="width: 100%; background-color: #FAF5F0;">
+      
+          <!-- START NESTED TABLE -->
+      
+              <table id="your-table-items" style="width: 100%; background-color: #FAF5F0;">
+                  <thead>
+                    <tr>
+                      <th style="text-align: center;" scope="col">DATE</th>
+                      <th style="text-align: center;" scope="col">TIME</th>
+                      <th style="text-align: center;" scope="col">CLASS</th>
+                      <th style="text-align: center;" scope="col">LOCATION</th>
+                      <th style="text-align: center;" scope="col">REGISTER</th>
+                    </tr>
+                  </thead>
+              <!-- CLASSES ROW 1-->
+              <tbody>
+                  <tr>
+                    <td>09.25.22</td>
+                    <td>5:30pm-7:00PM EDT</td>
+                    <td>Beginner Contemmporary</td>
+                     <td>In Studio</td>
+                    <td class="buytix" style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
+                  </tr>
+      
+              <!-- CLASSES ROW 2-->
                 <tr>
-                  <th style="background-color: gray;" scope="col">DATE</th>
-                  <th style="background-color: gray;" scope="col">TIME`</th>
-                  <th style="background-color: grey;" scope="col">CLASS</th>
-                  <th style="background-color: grey;" scope="col">LOCATION</th>
-                  <th style="background-color: grey; text-align: right;" scope="col">REGISTER</th>
-                </tr>
-          <!-- CLASSES ROW 1-->
-                <tr>
-                  <td>
-                    09.25.22
-                  </td>
-                  <td>5:30pm-7:00PM EDT</td>
-                  <td>Beginner Contemmporary</td>
-                  <td>In Studio</td>
-                  <td class="buytix" style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
-                </tr>
-
-          <!-- CLASSES ROW 2-->
-                <tr>
-                  <td>
-                    09.25.22
-                  </td>
+                  <td>09.25.22</td>
                   <td>5:30pm-7:00PM EDT</td>
                   <td>Modern Afro-Cban</td>
                   <td>In Studio</td>
                   <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
                 </tr> 
-
-
-          <!-- CLASSES ROW 3-->
-          <tr>
-            <td>
-              09.25.22
-            </td>
-            <td>5:30pm-7:00PM EDT</td>
-            <td>Advanced Hip-Hop</td>
-            <td>In Studio</td>
-            <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
-          </tr> 
-
-
-       <!-- CLASSES ROW 4-->
-       <tr>
-        <td>
-          09.25.22
-        </td>
-        <td>6:00pm-7:30PM EDT</td>
-        <td>Beginner Contemmporary</td>
-        <td>Online</td>
-        <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
-      </tr> 
-
-
-             <!-- CLASSES ROW 5-->
-             <tr>
-              <td>
-                09.25.22
-              </td>
+      
+      
+              <!-- CLASSES ROW 3-->
+              <tr>
+                <td>09.25.22</td>
+                <td>5:30pm-7:00PM EDT</td>
+                <td>Advanced Hip-Hop</td>
+                <td>In Studio</td>
+                <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
+              </tr> 
+      
+      
+              <!-- CLASSES ROW 4 -->
+             <tr> 
+              <td>09.25.22</td>
               <td>6:00pm-7:30PM EDT</td>
-              <td>Modern Afro-Cban</td>
+              <td>Beginner Contemmporary</td>
               <td>Online</td>
               <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
             </tr> 
-
-              </table>
-               <!-- END NESTED TABLE -->
-            
-            </td>
+      
+              <!-- CLASSES ROW 5 -->
+                <tr>
+                  <td>09.25.22</td>
+                  <td>6:00pm-7:30PM EDT</td>
+                  <td>Modern Afro-Cban</td>
+                  <td>Online</td>
+                  <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
+                </tr> 
+      
+             <!-- CLASSES ROW 6 -->
+             <tr>
+              <td>09.25.22</td>
+              <td>6:00pm-7:30PM EDT</td>
+              <td>House Dance</td>
+              <td>Online</td>
+              <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
+            </tr> 
+      
+             <!-- CLASSES ROW 7 -->
+             <tr>
+              <td>09.25.22</td>
+              <td>7:00pm-8:30PM EDT</td>
+              <td>Beginner Contemporary</td>
+              <td>In Studio</td>
+              <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
+            </tr> 
+      
+             <!-- CLASSES ROW 8 -->
+             <tr>
+              <td>09.25.22</td>
+              <td>7:00pm-8:30PM EDT</td>
+              <td>Modern Afro-Cuban</td>
+              <td>In Studio</td>
+              <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
+            </tr> 
+      
+            <!-- CLASSES ROW 9 -->
+              <tr>
+                <td>09.25.22</td>
+                <td>7:00pm-8:30PM EDT</td>
+                <td>Advanced Hip-Hop</td>
+                <td>Online</td>
+                <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
+              </tr> 
+      
+            <!-- CLASSES ROW 10 -->
+             <tr>
+              <td>09.25.22</td>
+              <td>7:00pm-8:30PM EDT</td>
+              <td>Open Bellydance</td>
+              <td>Online</td>
+              <td class="buytix"style="text-align: right;"><button type="button" class="button-buytix rounded-pill" style="background-color: #F2B05E">Register</button></td>
+            </tr> 
+      
+              </tbody>
+          </table>
+      
+        <!-- END NESTED TABLE -->
+          </td>
           </tr>
         </table>
+
     
 
     </div>
   </article>
 
   <!-- FOOTER -->
-  <div class="to-top"><a href="#">Top</a></div>
-  <footer style="width: 100%;">
-    <div class="social-icon">
+
+  <div class="to-top"><a href="#">TOP</a></div>
+
+  <footer style="width: 100%; justify-content: center;">
+    <div class="social-icon" style="justify-content: center;">
       <!-- Facebook -->
       <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
       <!--Instagram-->
@@ -164,7 +203,37 @@
       <!-- GitHub -->
       <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
     </div>
+    <div style="text-align: center">
+      Copyright &#169; 2022. Alvin Ailey Dance Company
+    </div>
+
   </footer>
+
+
+
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+     <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+    <!-- BEG JavaScript -->
+    <script>
+      $(document).ready(function () {
+        $("table#your-table-items").tablesorter({
+          sortList: [[1, 0]],
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc"
+        });
+      });
+    </script>
+    <!-- END JavaScript -->
+
 </body>
 
 </html>

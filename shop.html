@@ -263,11 +263,10 @@
 
 
 
+  <div class="to-top"><a href="#">TOP</a></div>
 
-  <div class="to-top"><a href="#">Top</a></div>
-  <footer style="width: 100%;">
-    <div class="social-icon">
-        THIS IS A TEST
+  <footer style="width: 100%; justify-content: center;">
+    <div class="social-icon" style="justify-content: center;">
       <!-- Facebook -->
       <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
       <!--Instagram-->
@@ -281,24 +280,12 @@
       <!-- GitHub -->
       <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
     </div>
+    <div style="text-align: center">
+      Copyright &#169; 2022. Alvin Ailey Dance Company
+    </div>
+
   </footer>
 
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
-    }
-    </script>
           
           <!-- Lightbox JavaScript-->
           <script type="text/JavaScript" src="assets/javascripts/lightbox-plus-jquery.min.js"></script>

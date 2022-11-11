@@ -7,7 +7,6 @@
 
 /* BEG styling for logo on top */
 
-
 @font-face {
   font-family: "roboto";
   src: url(../fonts/Roboto/);
@@ -68,7 +67,7 @@ nav ul li a {
   padding: 10px 20px 15px 20px;
   text-decoration: none;
   width: auto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -315,7 +314,7 @@ td.buytix {
 
 /* Styling anchor link (hyperlink) */
 a {
-  color: #00a2ff;
+  color: #0036D8;
   text-decoration: none;
 }
 
@@ -358,17 +357,6 @@ img.size03 {
   justify-content: center;
 }
 
-#vegetables {
-  color: seagreen;
-}
-
-#fruits {
-  color: orangered;
-}
-
-#grains {
-  color: saddlebrown;
-}
 /* END styling images */
 
 /* set padding from browser edges for content */
@@ -376,10 +364,17 @@ article > div {
 /* padding: top right bottom left */
 padding: 0px 40px 0px 40px;
 }
+
 footer > div.social-icon {
   padding: 30px;
   display: flex;
   justify-content: center;
+}
+
+
+footer {
+  background-color: #f21d1d;
+  padding: 10px 0px 10px 0px;
 }
 
 @media screen and (max-width: 750px) {
@@ -399,7 +394,7 @@ footer > div.social-icon {
     padding: 0px 40px 30px 40px;
     border-right: none;
   }
-  
+
   /*** for carousel area ***/
   article {
     width: 100%;
@@ -444,6 +439,7 @@ footer > div.social-icon {
     display: none;
   }
 }
+
 
 /********** BEG for dropdown menu in small screen **********/
 @media screen and (max-width: 500px) {
